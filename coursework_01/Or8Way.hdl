@@ -1,0 +1,17 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 8-way or gate:
+ * out = x[0] or x[1] or ... or x[7].
+ */
+
+CHIP Or8Way {
+    IN x[8];
+    OUT out;
+
+    PARTS:
+
+}
