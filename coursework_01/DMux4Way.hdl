@@ -1,0 +1,20 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 4-way demultiplexor.
+ * {w,x,y,z} = {in,0,0,0} if sel==00
+ *             {0,in,0,0} if sel==01
+ *             {0,0,in,0} if sel==10
+ *             {0,0,0,in} if sel==11
+ */
+
+CHIP DMux4Way {
+    IN in, sel[2];
+    OUT w, x, y, z;
+
+    PARTS:
+
+}
