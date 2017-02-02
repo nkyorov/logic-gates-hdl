@@ -1,0 +1,17 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 16-bit Not gate:
+ * for i=0..15: out[i] = not x[i]
+ */
+
+CHIP Not16 {
+    IN x[16];
+    OUT out[16];
+
+    PARTS:
+
+}
