@@ -1,0 +1,21 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 8-way demultiplexor.
+ * {s,t,u,v,w,x,y,z} = {in,0,0,0,0,0,0,0} if sel==000
+ *                     {0,in,0,0,0,0,0,0} if sel==001
+ *                     etc.
+ *                     {0,0,0,0,0,0,0,in} if sel==111
+ */
+
+
+CHIP DMux8Way {
+    IN in, sel[3];
+    OUT s, t, u, v, w, x, y, z;
+
+    PARTS:
+
+}
