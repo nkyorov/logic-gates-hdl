@@ -1,0 +1,16 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * Multiplexor. If sel==1 then out = y else out = x.
+ */
+
+CHIP Mux {
+    IN x, y, sel;
+    OUT out;
+
+    PARTS:
+
+}
