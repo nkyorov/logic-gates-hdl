@@ -1,0 +1,20 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 4-way 16-bit multiplexor.
+ * out = w if sel==00
+ *       x if sel==01
+ *       y if sel==10
+ *       z if sel==11
+ */
+
+CHIP Mux4Way16 {
+    IN w[16], x[16], y[16], z[16], sel[2];
+    OUT out[16];
+
+    PARTS:
+
+}
