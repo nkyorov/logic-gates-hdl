@@ -1,0 +1,18 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * Or gate:
+ * result = 1 if (x==1 or y==1),
+ *          0 otherwise
+ */
+
+CHIP Or {
+    IN x, y;
+    OUT out;
+
+    PARTS:
+
+}
