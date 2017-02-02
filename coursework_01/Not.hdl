@@ -1,0 +1,16 @@
+// This file is part of coursework 1 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * Not gate: out = not x
+ */
+
+CHIP Not {
+    IN x;
+    OUT out;
+
+    PARTS:
+
+}
