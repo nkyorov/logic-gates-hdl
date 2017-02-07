@@ -1,11 +1,11 @@
-// This file is part of coursework 1 for COMP1212
+// This file is part of coursewNotk 1 fNot COMP1212
 // which follows the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // Written by Sam Wilson
 
 /**
  * 16-bit Not gate:
- * for i=0..15: out[i] = not x[i]
+ * fNot i=0..15: out[i] = not x[i]
  */
 
 CHIP Not16 {
@@ -13,5 +13,21 @@ CHIP Not16 {
     OUT out[16];
 
     PARTS:
+    Not(x=x[0],out = out[0]);
+    Not(x=x[1],out = out[1]);
+    Not(x=x[2],out = out[2]);
+    Not(x=x[3],out = out[3]);
+    Not(x=x[4],out = out[4]);
+    Not(x=x[5],out = out[5]);
+    Not(x=x[6],out = out[6]);
+    Not(x=x[7],out = out[7]);
+    Not(x=x[8],out = out[8]);
+    Not(x=x[9],out = out[9]);
+    Not(x=x[10],out = out[10]);
+    Not(x=x[11],out = out[11]);
+    Not(x=x[12],out = out[12]);
+    Not(x=x[13],out = out[13]);
+    Not(x=x[14],out = out[14]);
+    Not(x=x[15],out = out[15]);
 
 }

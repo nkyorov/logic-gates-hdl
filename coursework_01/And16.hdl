@@ -13,5 +13,20 @@ CHIP And16 {
     OUT out[16];
 
     PARTS:
-
+    And(x=x[0], y=y[0], out = out[0]);
+    And(x=x[1], y=y[1], out = out[1]);
+    And(x=x[2], y=y[2], out = out[2]);
+    And(x=x[3], y=y[3], out = out[3]);
+    And(x=x[4], y=y[4], out = out[4]);
+    And(x=x[5], y=y[5], out = out[5]);
+    And(x=x[6], y=y[6], out = out[6]);
+    And(x=x[7], y=y[7], out = out[7]);
+    And(x=x[8], y=y[8], out = out[8]);
+    And(x=x[9], y=y[9], out = out[9]);
+    And(x=x[10], y=y[10], out = out[10]);
+    And(x=x[11], y=y[11], out = out[11]);
+    And(x=x[12], y=y[12], out = out[12]);
+    And(x=x[13], y=y[13], out = out[13]);
+    And(x=x[14], y=y[14], out = out[14]);
+    And(x=x[15], y=y[15], out = out[15]);
 }

@@ -13,5 +13,22 @@ CHIP Mux16 {
     OUT out[16];
 
     PARTS:
+    Mux(x = x[0], y=y[0], sel=sel, out=out[0]);
+    Mux(x = x[1], y=y[1], sel=sel, out=out[1]);
+    Mux(x = x[2], y=y[2], sel=sel, out=out[2]);
+    Mux(x = x[3], y=y[3], sel=sel, out=out[3]);
+    Mux(x = x[4], y=y[4], sel=sel, out=out[4]);
+    Mux(x = x[5], y=y[5], sel=sel, out=out[5]);
+    Mux(x = x[6], y=y[6], sel=sel, out=out[6]);
+    Mux(x = x[7], y=y[7], sel=sel, out=out[7]);
+    Mux(x = x[8], y=y[8], sel=sel, out=out[8]);
+    Mux(x = x[9], y=y[9], sel=sel, out=out[9]);
+    Mux(x = x[10], y=y[10], sel=sel, out=out[10]);
+    Mux(x = x[11], y=y[11], sel=sel, out=out[11]);
+    Mux(x = x[12], y=y[12], sel=sel, out=out[12]);
+    Mux(x = x[13], y=y[13], sel=sel, out=out[13]);
+    Mux(x = x[14], y=y[14], sel=sel, out=out[14]);
+    Mux(x = x[15], y=y[15], sel=sel, out=out[15]);
+
 
 }

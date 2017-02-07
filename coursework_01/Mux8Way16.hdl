@@ -22,5 +22,8 @@ CHIP Mux8Way16 {
     OUT out[16];
 
     PARTS:
+    Mux4Way16(w = s, x = t, y = u, z = v, sel[0] = sel[0], sel[1] = sel[1], out = temp1);
+    Mux4Way16(w = w, x = x, y = y, z = z, sel[0] = sel[0], sel[1] = sel[1], out = temp2);
+    Mux16(x = temp1, y = temp2, sel = sel[2], out = out);
 
 }

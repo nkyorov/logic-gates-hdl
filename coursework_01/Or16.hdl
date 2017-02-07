@@ -1,6 +1,6 @@
 // This file is part of coursework 1 for COMP1212
 // which follows the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
+// by Nisan Or Schocken, MIT Press.
 // Written by Sam Wilson
 
 
@@ -13,5 +13,20 @@ CHIP Or16 {
     OUT out[16];
 
     PARTS:
-
+    Or(x=x[0], y=y[0], out = out[0]);
+    Or(x=x[1], y=y[1], out = out[1]);
+    Or(x=x[2], y=y[2], out = out[2]);
+    Or(x=x[3], y=y[3], out = out[3]);
+    Or(x=x[4], y=y[4], out = out[4]);
+    Or(x=x[5], y=y[5], out = out[5]);
+    Or(x=x[6], y=y[6], out = out[6]);
+    Or(x=x[7], y=y[7], out = out[7]);
+    Or(x=x[8], y=y[8], out = out[8]);
+    Or(x=x[9], y=y[9], out = out[9]);
+    Or(x=x[10], y=y[10], out = out[10]);
+    Or(x=x[11], y=y[11], out = out[11]);
+    Or(x=x[12], y=y[12], out = out[12]);
+    Or(x=x[13], y=y[13], out = out[13]);
+    Or(x=x[14], y=y[14], out = out[14]);
+    Or(x=x[15], y=y[15], out = out[15]);
 }
