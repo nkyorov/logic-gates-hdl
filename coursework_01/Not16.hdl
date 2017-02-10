@@ -13,21 +13,21 @@ CHIP Not16 {
     OUT out[16];
 
     PARTS:
-    Not(x=x[0],out = out[0]);
-    Not(x=x[1],out = out[1]);
-    Not(x=x[2],out = out[2]);
-    Not(x=x[3],out = out[3]);
-    Not(x=x[4],out = out[4]);
-    Not(x=x[5],out = out[5]);
-    Not(x=x[6],out = out[6]);
-    Not(x=x[7],out = out[7]);
-    Not(x=x[8],out = out[8]);
-    Not(x=x[9],out = out[9]);
-    Not(x=x[10],out = out[10]);
-    Not(x=x[11],out = out[11]);
-    Not(x=x[12],out = out[12]);
-    Not(x=x[13],out = out[13]);
-    Not(x=x[14],out = out[14]);
-    Not(x=x[15],out = out[15]);
+    Not(x=x[0], out = out[0]);
+    Not(x=x[1], out = out[1]);
+    Not(x=x[2], out = out[2]);
+    Not(x=x[3], out = out[3]);
+    Not(x=x[4], out = out[4]);
+    Not(x=x[5], out = out[5]);
+    Not(x=x[6], out = out[6]);
+    Not(x=x[7], out = out[7]);
+    Not(x=x[8], out = out[8]);
+    Not(x=x[9], out = out[9]);
+    Not(x=x[10], out = out[10]);
+    Not(x=x[11], out = out[11]);
+    Not(x=x[12], out = out[12]);
+    Not(x=x[13], out = out[13]);
+    Not(x=x[14], out = out[14]);
+    Not(x=x[15], out = out[15]);
 
 }
