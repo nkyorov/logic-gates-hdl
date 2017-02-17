@@ -7,6 +7,11 @@
  * Not gate: out = not x
  */
 
+ /**
+ *Not gate can be represented as a single NAND gate, because we have exact same
+ *input.
+ */
+
 CHIP Not {
     IN x;
     OUT out;

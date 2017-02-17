@@ -9,6 +9,10 @@
  *          0 otherwise
  */
 
+/**
+*Use boolean laws
+*/
+
 CHIP Or {
     IN x, y;
     OUT out;

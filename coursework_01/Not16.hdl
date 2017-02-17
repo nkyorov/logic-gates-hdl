@@ -8,6 +8,10 @@
  * fNot i=0..15: out[i] = not x[i]
  */
 
+/**
+*We need 16 not gates, but i=0, so our last gate would be with index 15.
+*/
+
 CHIP Not16 {
     IN x[16];
     OUT out[16];

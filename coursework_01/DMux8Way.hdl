@@ -11,6 +11,10 @@
  *                     {0,0,0,0,0,0,0,in} if sel==111
  */
 
+/**
+*We can represent DMux8Way by 8 DMux gates. Taking a closer look on the logic
+*diagram we notice that there are two 4Way demultiplexors and one DMux.
+*/
 
 CHIP DMux8Way {
     IN in, sel[3];

@@ -15,6 +15,11 @@
  *       z if sel==111
  */
 
+ /**
+ *Taking a closer look on the logic diagram we notice that there are two 4Way
+ *demultiplexors and one DMux.
+ */
+
 CHIP Mux8Way16 {
     IN s[16], t[16], u[16], v[16],
        w[16], x[16], y[16], z[16],

@@ -9,6 +9,13 @@
  *          0 otherwise
  */
 
+/**
+*NAND gate is the negation of an And gate. Using double negation law, we can use
+*another NAND gate to represent an And gate.
+*/
+
+
+
 CHIP And {
     IN x, y;
     OUT out;
