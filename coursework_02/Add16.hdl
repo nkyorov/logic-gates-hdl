@@ -1,0 +1,17 @@
+// This file is part of coursework 2 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/*
+ * Adds two 16-bit values.
+ * The most-significant carry bit is ignored.
+ */
+
+CHIP Add16 {
+    IN x[16], y[16];
+    OUT out[16];
+
+    PARTS:
+
+}
