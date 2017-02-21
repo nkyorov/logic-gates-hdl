@@ -1,0 +1,17 @@
+// This file is part of coursework 2 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * Computes the sum of two bits.
+ */
+
+CHIP HalfAdder {
+    IN x, y;    // 1-bit inputs
+    OUT sum,    // Right bit of x + y
+        carry;  // Left bit of x + y
+
+    PARTS:
+
+}
