@@ -1,0 +1,18 @@
+// This file is part of coursework 2 for COMP1212
+// which follows the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// Written by Sam Wilson
+
+/**
+ * 1-bit register.
+ * If load[t]=1 then out[t+1] = x[t]
+ *              else out does not change (out[t+1]=out[t])
+ */
+
+CHIP Bit {
+    IN x, load;
+    OUT out;
+
+    PARTS:
+
+}
