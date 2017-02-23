@@ -1,4 +1,4 @@
-| time |    x   |load |address |  out   |
+| time |   x    |load |address |  out   |
 | 0+   |      0 |  0  |     0  |      0 |
 | 1    |      0 |  0  |     0  |      0 |
 | 1+   |      0 |  1  |     0  |      0 |
