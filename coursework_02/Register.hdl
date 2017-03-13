@@ -14,6 +14,7 @@ CHIP Register {
     OUT out[16];
 
     PARTS:
+    //A register is made of 16 bits.
     Bit(x = x[0], load = load, out = out[0]);
     Bit(x = x[1], load = load, out = out[1]);
     Bit(x = x[2], load = load, out = out[2]);

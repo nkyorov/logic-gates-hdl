@@ -15,6 +15,7 @@ CHIP RAM8 {
     OUT out[16];
 
     PARTS:
+    //Following the logic diagram from the slides.
     DMux8Way(in=load,sel=address,s=load1,t=load2,u=load3,v=load4,w=load5,x=load6,y=load7,z=load8);
     Mux8Way16(s=out1,t=out2,u=out3,v=out4,w=out5,x=out6,y=out7,z=out8,sel=address,out=out);
     Register(x=x,load=load1,out=out1);

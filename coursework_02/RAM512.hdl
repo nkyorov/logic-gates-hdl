@@ -15,6 +15,7 @@ CHIP RAM512 {
     OUT out[16];
 
     PARTS:
+    //8x64 = 512
     RAM64(x=x,load=load1,address=address[0..5],out=out1);
     RAM64(x=x,load=load2,address=address[0..5],out=out2);
     RAM64(x=x,load=load3,address=address[0..5],out=out3);
