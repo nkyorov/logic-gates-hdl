@@ -1,7 +1,7 @@
 load RAM16K.hdl,
 output-file RAM16K.out,
 compare-to RAM16K.cmp,
-output-list time%S1.4.1 in%D1.6.1 load%B2.1.2 address%D2.5.2 out%D1.6.1;
+output-list time%S1.4.1 x%D1.6.1 load%B2.1.2 address%D2.5.2 out%D1.6.1;
 
 set x 0,
 set load 0,

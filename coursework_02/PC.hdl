@@ -11,10 +11,17 @@
  * else                  out[t+1] = out[t]
  */
 
+//Lecture 9, slide 13
+
 CHIP PC {
     IN x[16],load,inc,reset;
     OUT out[16];
 
     PARTS:
+    Mux16(x = temp3,y= x,sel=load ,out= temp1);
+    Mux16(x = temp1 ,y=false ,sel= reset ,out=temp2);
+    Mux16(x = regout ,y=incout ,sel=inc ,out=temp3);
+    Inc16(x=regout, out=incout);
+    Register(x = temp2, load = true , out =regout, out = out);
 
 }

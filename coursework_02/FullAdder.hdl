@@ -13,5 +13,11 @@ CHIP FullAdder {
         carry;   // Left bit of x + y + z
 
     PARTS:
+    //x+y
+    HalfAdder(x = x, y = y, sum=xy, carry = temp1);
+    //(x+y) + z
+    HalfAdder(x=xy, y = z, sum = sum , carry = temp2);
+    //Don't forget the carry
+    HalfAdder(x=temp1, y =temp2, sum = carry);
 
 }

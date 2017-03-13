@@ -15,4 +15,8 @@ CHIP Bit {
 
     PARTS:
 
+    Mux(x = tempDFF, y = x, sel = load, out = temp1);
+    //DFF needs two outputs, one for the Mux and one out
+    DFF(x = temp1, out = tempDFF, out = out);
+
 }

@@ -39,5 +39,47 @@ CHIP CPU {
         pc[15];          // address of next instruction
 
     PARTS:
+    //Decoder
+    Not(x = instruction[15], out= aInst);
+    And(x= instruction[15],y=instruction[14],out=temp1);
+    And(x=temp1,y=instruction[13], out=cInstr);
+    And(x=cInstr,y=instruction[12], out=srcM);
+    And(x=cInstr,y=instruction[11], out = aluZx);
+    And(x=cInstr,y=instruction[10], out = aluNx);
+    And(x=cInstr,y=instruction[9], out = aluZy);
+    And(x=cInstr,y=instruction[8], out = aluNy);
+    And(x=cInstr,y=instruction[7], out = aluF);
+    And(x=cInstr,y=instruction[6], out = aluNO);
+    And(x=cInstr,y=instruction[5], out = destA);
+    And(x=cInstr,y=instruction[4], out = destD);
+    And(x=cInstr,y=instruction[3], out = writeM);
+    And(x=cInstr,y=instruction[2], out = JmpLT);
+    And(x=cInstr,y=instruction[1], out = JmpEQ);
+    And(x=cInstr,y=instruction[0], out = JmpGT);
+    //End Decoder
+
+    //Jumps
+    And(x=aluNg,y=aluNg,out=temp2);
+    Not(x=temp2,out=aluPos);
+    And(x=aluNg,y=JmpLT,out=jlt);
+    And(x=aluZr,y=JmpEQ,out=jeq);
+    And(x=aluPos,y=JmpGT,out=jgt);
+    Or8Way(x[0]=jlt, x[1]=jeq, x[2]=jgt, x[3..7]=false, out=jmp);
+    //End jumps
+
+    //Registers
+    ARegister(in=muxOut,load=loadA,out=aOut,out[0..14]=addressM);
+    DRegister(in=aluOut,load=destD,out=dOut);
+    // End registers
+
+    Or(x=aInst,y=destA,out=loadA);
+    Mux16(x=instruction,y=aluOut,sel=destA,out=muxOut);
+
+    Mux16(x=aOut,y=inM,sel=srcM,out=muxOut2);
+    ALU(x=dOut,y=muxOut2,zx=aluZx,nx=aluNx,zy=aluZy,ny=aluNy,f=aluF,no=aluNO,out=aluOut,out=outM, zr=aluZr,ng=aluNg);
+
+    PC(x=aOut,load=jmp,inc=true,reset=reset,out[0..14]=pc);
+
+
 
 }

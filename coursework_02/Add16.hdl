@@ -13,5 +13,25 @@ CHIP Add16 {
     OUT out[16];
 
     PARTS:
+    //First we need to calculate x + y
+    HalfAdder(x = x[0] , y = y[0] , sum = out[0] , carry = firstCarry );
+
+    //z will hold our carry from before;
+    FullAdder(x = x[1], y = y[1] , z = firstCarry, sum  = out[1] , carry = secondCarry);
+    FullAdder(x = x[2], y = y[2] , z = secondCarry, sum  = out[2], carry = thirdCarry );
+    FullAdder(x = x[3], y = y[3] , z = thirdCarry, sum  = out[3] , carry = fourthCarry );
+    FullAdder(x = x[4], y = y[4] , z = fourthCarry, sum  = out[4], carry = fifthCarry );
+    FullAdder(x = x[5], y = y[5] , z = fifthCarry, sum  = out[5], carry = sixthCarry);
+    FullAdder(x = x[6], y = y[6] , z = sixthCarry, sum  = out[6], carry = seventhCarry);
+    FullAdder(x = x[7], y = y[7] , z = seventhCarry, sum  = out[7], carry = eightCarry);
+    FullAdder(x = x[8], y = y[8] , z = eightCarry, sum  = out[8], carry = ninthCarry);
+    FullAdder(x = x[9], y = y[9] , z = ninthCarry, sum  = out[9], carry = tenthCarry);
+    FullAdder(x = x[10], y = y[10] , z = tenthCarry, sum  = out[10], carry = eleventhCarry);
+    FullAdder(x = x[11], y = y[11] , z = eleventhCarry , sum  = out[11], carry = carry12 );
+    FullAdder(x = x[12], y = y[12] , z = carry12 , sum  = out[12], carry = carry13);
+    FullAdder(x = x[13], y = y[13] , z = carry13, sum  = out[13], carry = carry14);
+    FullAdder(x = x[14], y = y[14] , z = carry14, sum  = out[14], carry = carry15);
+    FullAdder(x = x[15], y = y[15] , z = carry15, sum  = out[15], carry = carry16);
+
 
 }

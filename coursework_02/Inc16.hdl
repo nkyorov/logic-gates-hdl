@@ -7,10 +7,13 @@
  * 16-bit incrementer: out = x + 1 (arithmetic addition)
  */
 
+ //16 bit representation of 1: 0000000000000001
+
 CHIP Inc16 {
     IN x[16];
     OUT out[16];
 
     PARTS:
+    Add16(x=x,y[0]=true,out=out);
 
 }
